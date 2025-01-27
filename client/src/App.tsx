@@ -1,12 +1,20 @@
 
-import './App.scss'
+import './App.css'
+import { About } from './components/about'
+import { Footer } from './components/footer'
+import { Navigation } from './components/navigation'
 
 function App() {
-  const name= "Aman Gupta";
 
   return (
     <>
-      <div className='text-3xl font-bold underline'> Hii Welcome to portfolio {name}</div>
+      <div className="min-h-screen bg-background text-foreground">
+      <Navigation />
+      <main>
+        <About/>
+      </main>
+      <Footer/>
+    </div>
     </>
   )
 }

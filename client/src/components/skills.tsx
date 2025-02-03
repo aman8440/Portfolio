@@ -87,7 +87,7 @@ const item = {
 
 export function Skills() {
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-900 w-full">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

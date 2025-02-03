@@ -4,7 +4,7 @@ import profile from '../assets/img/profile.jpg';
 
 export function About() {
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-20 w-full">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

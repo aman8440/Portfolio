@@ -10,7 +10,6 @@ import { Contact } from "../components/contact"
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      {/* Hero Section */}
       <section className="w-full min-h-screen flex flex-col items-center justify-center py-12 bg-grid-small-black/[0.2] dark:bg-grid-small-white/[0.2]">
         <div className="container flex flex-col items-center text-center gap-4 relative">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>

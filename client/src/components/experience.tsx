@@ -57,7 +57,7 @@ const item = {
 
 export function Experience() {
   return (
-    <section className="py-20 bg-white dark:bg-gray-900">
+    <section id="experience" className="py-20 bg-white dark:bg-gray-900 w-full">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -76,10 +76,7 @@ export function Experience() {
         >
           {experiences.map((experience, index) => (
             <motion.div key={index} variants={item} className="relative pl-8 pb-12 last:pb-0">
-              {/* Timeline line */}
               <div className="absolute left-0 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700" />
-
-              {/* Timeline dot */}
               <div className="absolute left-[-4px] top-2 w-2 h-2 rounded-full bg-primary" />
 
               <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">

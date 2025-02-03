@@ -71,7 +71,7 @@ export function Projects() {
   }, [page, autoPlay])
 
   return (
-    <section className="py-20 bg-gray-100 dark:bg-gray-800">
+    <section id="projects" className="py-20 bg-gray-100 dark:bg-gray-800 w-full">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ export function Projects() {
         <div
           className="relative h-[500px] w-full max-w-4xl mx-auto"
           onMouseEnter={() => setAutoPlay(false)}
-          onMouseLeave={() => setAutoPlay(true)}
+          onMouseLeave={() => setAutoPlay(false)}
         >
           <AnimatePresence initial={false} custom={direction}>
             <motion.div

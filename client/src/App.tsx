@@ -14,10 +14,6 @@ function App() {
       <Navigation />
       <main>
         <Home />
-        {/* <About/>
-        <Skills/>
-        <Experience />
-        <Projects /> */}
       </main>
       <Footer/>
     </div>

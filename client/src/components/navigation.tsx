@@ -28,6 +28,9 @@ export function Navigation() {
           <a href="#about" className="hover:text-primary transition-colors">
             About
           </a>
+          <a href="#skills" className="hover:text-primary transition-colors">
+            Skills
+          </a>
           <a href="#experience" className="hover:text-primary transition-colors">
             Experience
           </a>

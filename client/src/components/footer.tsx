@@ -3,15 +3,20 @@ import { Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react"
 
 export function Footer() {
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Mail, href: "mailto:your@email.com", label: "Email" },
+    { icon: Github, href: "https://github.com/aman8440", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/aman-gupta-931148208", label: "LinkedIn" },
+    { icon: Twitter, href: "https://x.com/amang4885", label: "Twitter" },
+    { icon: Instagram, href: "https://www.instagram.com/aman_gupta8440", label: "Instagram" },
+    { icon: Mail, href: "mailto:amang4885@gmail.com", label: "Email" },
   ]
 
   return (
-    <footer className="bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-white py-12">
+    <motion.footer
+      className="bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-white py-12"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
@@ -33,18 +38,26 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#projects"
+                  href="#skills"
                   className="text-gray-600 dark:text-gray-400 hover:text-gray-900 hover:dark:text-white transition-colors"
                 >
-                  Projects
+                  Skills
                 </a>
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="#experience"
                   className="text-gray-600 dark:text-gray-400 hover:text-gray-900 hover:dark:text-white transition-colors"
                 >
-                  Contact
+                  Experience
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  className="text-gray-600 dark:text-gray-400 hover:text-gray-900 hover:dark:text-white transition-colors"
+                >
+                  Projects
                 </a>
               </li>
             </ul>
@@ -73,7 +86,6 @@ export function Footer() {
           <p>© {new Date().getFullYear()} Aman Gupta. All rights reserved.</p>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   )
 }
-

@@ -4,6 +4,7 @@
 
 /client/node_modules
 /client/package-lock.json
-/client/.env
+/client/src/environment
+/client/src/environment/environment.ts
 
 /client/dist

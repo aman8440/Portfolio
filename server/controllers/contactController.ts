@@ -77,21 +77,21 @@ export const contactData = async (req:Request,res:Response) =>{
     mailer(newSchema.email as string, newSchema.name as string, newSchema.query as string, res);
 
     return res.status(201).json({
-      success: "success",
-      message: 'Contact saved successfully',
+      status: "success",
+      message: 'Query send successfully',
       data: userDate,
     });
   } catch(err){
     if (err instanceof z.ZodError) {
       return res.status(400).json({
-        success: "error",
+        status: "error",
         message: 'Validation failed',
         errors: err.errors.map((error) => error.message),
       });
     }
     console.error(err);
     return res.status(500).json({
-      success: "error",
+      status: "error",
       message: 'An error occurred while saving the contact' + err,
     });
   }

@@ -3,3 +3,10 @@ export interface FormDataProp{
   email: string;
   message: string;
 }
+
+export interface ResposneProp{
+  status: string | number;
+  message?: string;
+  data?: FormDataProp;
+  error?: string;
+}

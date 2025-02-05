@@ -1,5 +1,6 @@
 
 import './App.css'
+import { ToastContainer } from 'react-toastify';
 import { CustomCursor } from './components/custom-cursor'
 import { Footer } from './components/footer'
 import { Navigation } from './components/navigation'
@@ -11,6 +12,7 @@ function App() {
     <>
       <div className="min-h-screen bg-background text-foreground">
       <CustomCursor />
+      <ToastContainer position='top-right' />
       <Navigation />
       <main>
         <Home />

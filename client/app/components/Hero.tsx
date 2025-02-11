@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { GitlabIcon as GitHub, Linkedin, Mail, ArrowDown } from "lucide-react"
 import { motion } from "framer-motion"
+import ProfileImg from "../../public/Aman.jpeg"
 
 const CodePattern = () => (
   <svg className="absolute inset-0 w-full h-full opacity-5" xmlns="http://www.w3.org/2000/svg">
@@ -95,9 +96,9 @@ export default function Hero() {
             <div className="relative w-72 h-72 md:w-96 md:h-96 mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 dark:from-blue-600 dark:to-purple-600 rounded-3xl transform rotate-6 opacity-50"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 dark:from-purple-600 dark:to-blue-600 rounded-3xl transform -rotate-6 opacity-50"></div>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl h-full">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0812.jpg-jQSxWaycmtpBR7IUnsPV8C8L3vlrQ2.jpeg"
+                  src= {ProfileImg}
                   alt="Aman Gupta"
                   fill
                   className="object-cover"

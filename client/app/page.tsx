@@ -1,3 +1,6 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Experience from "./components/Experience"
@@ -10,10 +13,21 @@ import { CustomCursor } from "./components/custom-cursor"
 import { ToastContainer } from 'react-toastify';
 
 export default function Home() {
+  const [showCursor, setShowCursor] = useState(true)
+  
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setShowCursor(window.innerWidth > 768)
+    }
+    checkScreenSize()
+    window.addEventListener("resize", checkScreenSize)
+    return () => window.removeEventListener("resize", checkScreenSize)
+  }, [])
+  
   return (
     <main className="bg-gray-50 dark:bg-gray-900 min-h-screen">
       <ToastContainer position='top-right' />
-      <CustomCursor />
+      {showCursor && <CustomCursor />}
       <FloatingNav />
       <Hero />
       <About />

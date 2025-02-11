@@ -30,5 +30,4 @@ next-env.d.ts
 
 /client/node_modules
 /client/package-lock.json
-/client/app/environment
 /client/dist

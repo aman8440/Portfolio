@@ -1,0 +1,34 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# next.js
+/client/.next/
+/client/out/
+
+# production
+/client/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+/server/node_modules
+/server/package-lock.json
+/server/.env
+
+/client/node_modules
+/client/package-lock.json
+/client/app/environment
+/client/dist

@@ -32,29 +32,29 @@ export default function Contact() {
   })
 
   const onSubmit = async (data: FormDataProp) => {
+    setIsSubmitting(true);
     try {
-      const response :ResposneProp = await fetch( enviromentVariable.BASE_URL +'/contact', {
+      const response: ResposneProp = await fetch(enviromentVariable.BASE_URL + '/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
-      })
-      if(response.status === 201){
+      });
+  
+      if (response.status === 201) {
         reset();
-        setIsSubmitting(false);
         toast.success("Query sent successfully!");
-      }
-      else{
+      } else {
         throw new Error(response.message || "Something went wrong!");
       }
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    } catch (error : any) {
+    } catch (error: any) {
       console.error(error);
-      setIsSubmitting(false);
       toast.error(error.message || "Something went wrong!");
+    } finally {
+      setIsSubmitting(false);
     }
-  }
+  };
 
   return (
     <section
@@ -164,9 +164,6 @@ export default function Contact() {
             </form>
           </motion.div>
         </div>
-      </div>
-      <div className="absolute bottom-0 right-0 w-64 h-64 -mb-32 -mr-32 opacity-20">
-        <Image src="/placeholder.svg?height=256&width=256" alt="Decorative background" width={256} height={256} />
       </div>
     </section>
   )

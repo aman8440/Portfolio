@@ -1,5 +1,3 @@
-![Portfolio Banner](https://via.placeholder.com/1200x400?text=Personal+Portfolio+Banner)
-
 # 🚀 Personal Portfolio
 
 ### 🌐 Built with Node.js, Express, MongoDB, and Next.js (TypeScript)

@@ -88,6 +88,6 @@ Feel free to **fork** this repo, make improvements, and submit a **pull request*
 
 ### 📬 Contact
 📧 **Email:** amang4885@gmail.com  
-🔗 **Portfolio:** [your-portfolio-url.com](https://portfolio-aman-guptas-projects-3a054ab6.vercel.app/)   
+🔗 **Portfolio:** [portfolio-url.com](https://portfolio-aman-guptas-projects-3a054ab6.vercel.app/)   
 
 _✨ Give this repo a **star ⭐** if you like it!_

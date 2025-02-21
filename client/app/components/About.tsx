@@ -42,7 +42,7 @@ export default function About() {
               My expertise extends to modern frameworks like React and state management tools like Redux. I'm
               committed to writing clean, efficient code and staying up-to-date with the latest industry trends to
               deliver cutting-edge solutions for my clients. <a
-              href="https://drive.google.com/file/d/13yRsP89F7Pxl1-ZE8VUHYq_BiqH3ftIN/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ufCElkGwcoVRmJ71u_GEM4_gEEVbHSEG/view?usp=sharing"
               download="Aman_Gupta_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"

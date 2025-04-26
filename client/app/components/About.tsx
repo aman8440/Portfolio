@@ -7,7 +7,7 @@ import Image from "next/image"
 export default function About() {
   const skills = [
     { icon: <Code className="w-8 h-8 text-blue-500" />, title: "Frontend", description: "React, Angular, Redux" },
-    { icon: <Server className="w-8 h-8 text-green-500" />, title: "Backend", description: "Node.js, Express, CodeIgniter" },
+    { icon: <Server className="w-8 h-8 text-green-500" />, title: "Backend", description: "Node.js, Express, CodeIgniter, Amplify" },
     { icon: <Database className="w-8 h-8 text-purple-500" />, title: "Database", description: "MongoDB, MySQL" },
     { icon: <Zap className="w-8 h-8 text-yellow-500" />, title: "Performance", description: "Optimization, Caching" },
   ]
@@ -42,7 +42,7 @@ export default function About() {
               My expertise extends to modern frameworks like React and state management tools like Redux. I'm
               committed to writing clean, efficient code and staying up-to-date with the latest industry trends to
               deliver cutting-edge solutions for my clients. <a
-              href="https://drive.google.com/file/d/1ufCElkGwcoVRmJ71u_GEM4_gEEVbHSEG/view?usp=sharing"
+              href="https://drive.google.com/file/d/1adG6YtyUnvqs9lDUa6YImTBSTMQofTuA/view?usp=sharing"
               download="Aman_Gupta_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"

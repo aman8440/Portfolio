@@ -13,6 +13,7 @@ export default function Experience() {
       period: "May 2024 - Present",
       role: "Full Stack Developer",
       responsibilities: [
+        "Contributed to the development of a scalable Self Service Portal (SSP) integrating multiple internal apps. Worked on both frontend (Angular) and backend (AWS Amplify, Lambda, DynamoDB, S3) to build and integrate features. Played a key role in developing UI components, setting up backend APIs, and ensuring smooth module integration.",
         "Developed and optimized Angular web components, implemented flip-to functionality, and improved performance metrics by 20%, using best practices for enhanced user experience and application efficiency.",
         "Designed and implemented RESTful APIs.",
         "Created responsive interfaces with React.js and Redux.",
